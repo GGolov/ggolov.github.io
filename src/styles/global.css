@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+* {
+  transition-duration: 200ms;
+}
