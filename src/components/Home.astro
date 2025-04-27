@@ -1,22 +1,61 @@
 ---
-
+import linkedinIcon from "../assets/linkedin-icon.svg";
+import gitHubIcon from "../assets/github-icon.svg";
 ---
 
-<main class="flex-auto">
-  <section class="flex flex-col items-center justify-center h-full">
-    <h1 class="text-4xl font-bold">Welcome to GG</h1>
-    <img
-      src="https://rvarccgfnywnxswgscep.supabase.co/storage/v1/object/public/golov.dev//profile-web.jpeg"
-      alt=""
-    />
-    <p class="mt-4 text-lg">This is a simple Astro project.</p>
-    <p class="mt-2 text-lg">Explore the projects and learn more about Astro!</p>
-    <a
-      href="/projects"
-      class="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-      >View Projects</a
-    >
-  </section>
+<main class="flex-auto flex flex-row">
+  <aside class="bg-amber-100 p-6 flex flex-col gap-8">
+    <section class="flex flex-col items-center whitespace-nowrap">
+      <h1 class="font-bold text-2xl">Gleb Golov</h1>
+      <h2 class="opacity-70">Web Developer</h2>
+    </section>
+    <section class="flex flex-col items-center">
+      <h2 class="font-bold text-2xl mb-3">Socials</h2>
+      <ul class="flex flex-col gap-2">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/gleb-golov/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex flex-row items-center gap-2"
+            ><img src={linkedinIcon.src} width="30" height="30" /> Linkedin</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/GGolov"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex flex-row items-center gap-2"
+            ><img src={gitHubIcon.src} width="30" height="30" /> GitHub</a
+          >
+        </li>
+      </ul>
+    </section>
+  </aside>
+  <div class="flex-auto">
+    <section class="flex flex-col p-10 gap-3">
+      <h2 class="font-bold text-3xl">Experience</h2>
+      <ol class="flex flex-col gap-3">
+        <li class="flex flex-row gap-2">
+          <section>
+            <h3 class="font-semibold text-xl">Web Developer</h3>
+            <p>Capgemini - Full Time</p>
+            <p>Oct 2022 - Present</p>
+            <p>Turin, Piedmont, Italy - Hybrid</p>
+          </section>
+        </li>
+        <li class="flex flex-row gap-2">
+          <section>
+            <h3 class="font-semibold text-xl">Q.A. Developer</h3>
+            <p>EpiCura - Full Time</p>
+            <p>Oct 2022 - Present</p>
+            <p>Turin, Piedmont, Italy - Hybrid</p>
+          </section>
+        </li>
+      </ol>
+    </section>
+  </div>
 </main>
 
 <style></style>
