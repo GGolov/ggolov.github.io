@@ -47,6 +47,11 @@
 - ABOUT-03: Education section
 - ABOUT-04: Fix About nav link
 
+**Plans:** 1 plan
+
+Plans:
+- [ ] 02-01-PLAN.md — Create About.astro component, about.astro route, and add About header nav link
+
 **Success Criteria:**
 1. `/about` page exists and loads without 404
 2. About page includes bio paragraph, skills categories with technologies, and education history
