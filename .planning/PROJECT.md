@@ -8,20 +8,19 @@ A personal curriculum vitae website for Gleb Golov, a Web Developer. The site pr
 
 Visitors can quickly understand Gleb's professional background, skills, and experience in a clean, readable format that feels like a well-designed resume.
 
-## Current State (v1.0 — shipped 2026-05-19)
+## Current State (v2.0 — in progress)
 
-The initial redesign is complete. The site has:
+The site has been consolidated to a single-page CV experience. The About page was merged into Home and removed. The site now has:
 
-- **3 pages**: Home, About, Projects — all with consistent dark/neutral theme
+- **2 pages**: Home, Projects — all with consistent dark/neutral theme
 - **Dark theme**: `#0f0f0f` background, `#e8e8e8` text, `#4a90d9` accent
 - **Single-column layout**: `max-w-[720px]` centered container on all content pages
-- **Header**: Serif "GG" logo, nav links (Home, Projects, About), social icons (LinkedIn, GitHub)
+- **Header**: Serif "GG" logo, nav links (Home, Projects), social icons (LinkedIn, GitHub)
 - **Footer**: Dark surface, muted text, hosting credits (Astro + GitHub Pages)
-- **Homepage**: Name, title, bio, chronological experience (3 entries), social links
-- **About page**: Bio, location, languages, skills (3 categories), education (2 entries)
+- **Homepage**: Name, title, photo placeholder, bio (3 paragraphs), languages, skills (3 categories), experience (2 entries), education (2 entries), social links — all CV info in one page
 - **Projects page**: Styled placeholder with "Coming soon" message
 - **Accessibility**: Skip-to-content link, semantic HTML landmarks, `rel="noopener noreferrer"` on external links, WCAG AA contrast
-- **Tech**: Astro 5.x, Tailwind CSS v4, static output, ~400 LOC across source files
+- **Tech**: Astro 5.x, Tailwind CSS v4, static output, ~500 LOC across source files
 
 ## Requirements
 
@@ -40,6 +39,7 @@ The initial redesign is complete. The site has:
 - ✓ **ABOUT-02** — Skills/tech stack section — v1.0
 - ✓ **ABOUT-03** — Education section — v1.0
 - ✓ **ABOUT-04** — Fix About nav link — v1.0
+- ✓ **ABOUT-05** — Merge About CV info into Home page, delete About page — v2.0
 - ✓ **HEADER-01** — Redesign header — v1.0
 - ✓ **HEADER-02** — Fix all nav links — v1.0
 - ✓ **FOOTER-01** — Remove Supabase credit — v1.0
@@ -49,7 +49,6 @@ The initial redesign is complete. The site has:
 
 - [ ] Real project content for Projects page
 - [ ] Downloadable resume PDF
-- [ ] Visual skill indicators (bars, tags, or icons)
 - [ ] Contact section or contact form
 
 ### Out of Scope
@@ -61,16 +60,7 @@ The initial redesign is complete. The site has:
 - Blog or articles section — not part of CV scope
 - Testimonials / recommendations — no content available yet
 - Automated CI tests — not blocking for initial release
-
-## Next Milestone Goals
-
-Potential focus areas for the next iteration:
-
-- **Projects page**: Replace placeholder with real project showcases (PROJ-01, PROJ-02)
-- **Downloadable resume**: PDF download link (CONTACT-02)
-- **Skill indicators**: Visual progress bars or tags (SKILL-01)
-- **Contact**: Contact section or form (CONTACT-01)
-- **Polish**: Continue refinements based on feedback
+- Dedicated About page — merged into Home as single-page CV (v2.0)
 
 ## Context
 
@@ -114,4 +104,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-05-19 after v1.0 milestone*
+*Last updated: 2026-05-19 after merging About into Home (v2.0)*
