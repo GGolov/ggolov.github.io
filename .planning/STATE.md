@@ -39,7 +39,7 @@ See: .planning/PROJECT.md (updated 2026-05-19)
 ## Git State
 
 - Branch: `dev`
-- Latest planning commit: `da321c9` — docs(01): ship phase 1 — PR #1
+- Latest planning commit: `384ecf1` — docs(02): ship phase 2 — About Page & Content
 
 ## Active Decisions
 
