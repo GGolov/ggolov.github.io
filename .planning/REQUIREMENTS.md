@@ -24,10 +24,10 @@ Requirements for initial redesign. Each maps to roadmap phases.
 
 ### About Page
 
-- [ ] **ABOUT-01**: Create `/about` page with professional bio section
-- [ ] **ABOUT-02**: Add skills/tech stack section with categorized technologies
-- [ ] **ABOUT-03**: Add education section with academic background
-- [ ] **ABOUT-04**: Fix the About link in the header navigation (currently leads to 404)
+- [x] **ABOUT-01**: Create `/about` page with professional bio section
+- [x] **ABOUT-02**: Add skills/tech stack section with categorized technologies
+- [x] **ABOUT-03**: Add education section with academic background
+- [x] **ABOUT-04**: Fix the About link in the header navigation (currently leads to 404)
 
 ### Header & Footer
 
@@ -77,10 +77,10 @@ Deferred to future iteration. Tracked but not in current roadmap.
 | HOME-03 | Phase 1 | Complete |
 | HOME-04 | Phase 1 | Complete |
 | HOME-05 | Phase 1 | Complete |
-| ABOUT-01 | Phase 2 | Pending |
-| ABOUT-02 | Phase 2 | Pending |
-| ABOUT-03 | Phase 2 | Pending |
-| ABOUT-04 | Phase 2 | Pending |
+| ABOUT-01 | Phase 2 | Complete |
+| ABOUT-02 | Phase 2 | Complete |
+| ABOUT-03 | Phase 2 | Complete |
+| ABOUT-04 | Phase 2 | Complete |
 | HEADER-01 | Phase 1 | Complete |
 | HEADER-02 | Phase 1 | Complete |
 | FOOTER-01 | Phase 1 | Complete |

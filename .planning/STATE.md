@@ -4,7 +4,7 @@ milestone: v1.0
 milestone_name: milestone
 current_phase: 02
 status: shipped
-last_updated: "2026-05-19T02:42:34.000Z"
+last_updated: "2026-05-19T03:31:00.000Z"
 progress:
   total_phases: 3
   completed_phases: 2
@@ -18,7 +18,7 @@ progress:
 **Last updated:** 2026-05-19
 **Current phase:** 02
 **Last Activity:** 2026-05-19
-**Status:** Phase 01 shipped — PR #1
+**Status:** Phase 02 shipped — PR #1 (included in Phase 1 merge)
 **Overall progress:** 66%
 
 ## Project Reference
@@ -39,7 +39,7 @@ See: .planning/PROJECT.md (updated 2026-05-19)
 ## Git State
 
 - Branch: `dev`
-- Latest planning commit: `ed180cb` — docs(01): complete visual foundation and homepage redesign plan
+- Latest planning commit: `da321c9` — docs(01): ship phase 1 — PR #1
 
 ## Active Decisions
 
@@ -47,7 +47,7 @@ See: .planning/PROJECT.md (updated 2026-05-19)
 |----------|--------|
 | Classic resume style, single-column layout | ✓ Implemented |
 | Dark/neutral color scheme | ✓ Implemented |
-| Create About page (not remove link) | Pending (Phase 2) |
+| Create About page (not remove link) | ✓ Implemented (Phase 2) |
 | Remove Supabase from footer | ✓ Implemented |
 
 ## Notes
