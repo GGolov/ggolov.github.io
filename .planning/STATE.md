@@ -30,7 +30,7 @@ See: .planning/PROJECT.md (updated 2026-05-19)
 
 | Phase | Status | Progress |
 |-------|--------|----------|
-| 1 — Visual Foundation & Homepage Redesign | ◆ UI-SPEC approved | 0% |
+| 1 — Visual Foundation & Homepage Redesign | ◆ Planned | 0% |
 | 2 — About Page & Content | ○ Pending | 0% |
 | 3 — Polish & Quality | ○ Pending | 0% |
 
