@@ -2,54 +2,81 @@
 
 ## What This Is
 
-A personal curriculum vitae website for Gleb Golov, a Web Developer. The site presents a professional resume-style landing page with work experience, skills, education, and bio sections — styled with a classic, dark-neutral aesthetic to make a strong impression on potential employers and recruiters. Built as a static Astro site hosted on GitHub Pages.
+A personal curriculum vitae website for Gleb Golov, a Web Developer. The site presents a professional resume-style landing page with work experience, skills, education, and bio sections — styled with a classic, dark-neutral aesthetic to make a strong impression on potential employers and recruiters. Built as a static Astro site hosted on GitHub Pages. v1.0 shipped May 2026.
 
 ## Core Value
 
 Visitors can quickly understand Gleb's professional background, skills, and experience in a clean, readable format that feels like a well-designed resume.
 
+## Current State (v1.0 — shipped 2026-05-19)
+
+The initial redesign is complete. The site has:
+
+- **3 pages**: Home, About, Projects — all with consistent dark/neutral theme
+- **Dark theme**: `#0f0f0f` background, `#e8e8e8` text, `#4a90d9` accent
+- **Single-column layout**: `max-w-[720px]` centered container on all content pages
+- **Header**: Serif "GG" logo, nav links (Home, Projects, About), social icons (LinkedIn, GitHub)
+- **Footer**: Dark surface, muted text, hosting credits (Astro + GitHub Pages)
+- **Homepage**: Name, title, bio, chronological experience (3 entries), social links
+- **About page**: Bio, location, languages, skills (3 categories), education (2 entries)
+- **Projects page**: Styled placeholder with "Coming soon" message
+- **Accessibility**: Skip-to-content link, semantic HTML landmarks, `rel="noopener noreferrer"` on external links, WCAG AA contrast
+- **Tech**: Astro 5.x, Tailwind CSS v4, static output, ~400 LOC across source files
+
 ## Requirements
 
-### Validated
+### Validated (v1.0)
 
-- ✓ Homepage with name, title, and experience section — existing
-- ✓ Projects page with basic route — existing
-- ✓ Navigation between Home and Projects pages — existing
-- ✓ Footer with hosting credits — existing
-- ✓ Social links to LinkedIn and GitHub — existing
-- ✓ Responsive HTML shell with Tailwind CSS — existing
-- ✓ Deployed to GitHub Pages via GitHub Actions — existing
+- ✓ **VISUAL-01** — Dark/neutral color scheme — v1.0
+- ✓ **VISUAL-02** — Classic resume typography (system serif/sans stack) — v1.0
+- ✓ **VISUAL-03** — Single-column layout — v1.0
+- ✓ **VISUAL-04** — High readability and accessibility (WCAG AA) — v1.0
+- ✓ **HOME-01** — Single-column resume flow — v1.0
+- ✓ **HOME-02** — Name, title, bio at top — v1.0
+- ✓ **HOME-03** — Chronological work experience — v1.0
+- ✓ **HOME-04** — Fix HTML nesting bug — v1.0
+- ✓ **HOME-05** — Social links in header — v1.0
+- ✓ **ABOUT-01** — Create `/about` with bio — v1.0
+- ✓ **ABOUT-02** — Skills/tech stack section — v1.0
+- ✓ **ABOUT-03** — Education section — v1.0
+- ✓ **ABOUT-04** — Fix About nav link — v1.0
+- ✓ **HEADER-01** — Redesign header — v1.0
+- ✓ **HEADER-02** — Fix all nav links — v1.0
+- ✓ **FOOTER-01** — Remove Supabase credit — v1.0
+- ✓ **FOOTER-02** — Redesign footer — v1.0
 
 ### Active
 
-- [ ] **Redesign homepage** with a classic resume single-column layout and dark/neutral color scheme
-- [ ] **Create About page** with bio, skills/tech stack, and education sections
-- [ ] **Fix invalid HTML** in Home.astro (nested `<li>` inside `<li>`)
-- [ ] **Remove Supabase mention** from footer (not actually used)
-- [ ] **Fix the About nav link** so it points to the new About page (currently 404)
-- [ ] **Update global styling** — professional dark/neutral theme, serif or clean typography, paper-like feel appropriate for a CV
-- [ ] **Add skills section** to homepage or About page with technology categories
-- [ ] **Add education section** to the About page
+- [ ] Real project content for Projects page
+- [ ] Downloadable resume PDF
+- [ ] Visual skill indicators (bars, tags, or icons)
+- [ ] Contact section or contact form
 
 ### Out of Scope
 
-- Projects page redesign — deferred; keep existing placeholder for now
-- Contact form — not needed for v1; email/social links sufficient
+- Projects page redesign — deferred to v2; placeholder sufficient
+- Contact form — not needed for v1; email/social links sufficient (revisit for v2)
 - Client-side interactivity (JS frameworks, animations) — keep static
 - Backend APIs or server routes — site remains fully static
 - Blog or articles section — not part of CV scope
 - Testimonials / recommendations — no content available yet
+- Automated CI tests — not blocking for initial release
+
+## Next Milestone Goals
+
+Potential focus areas for the next iteration:
+
+- **Projects page**: Replace placeholder with real project showcases (PROJ-01, PROJ-02)
+- **Downloadable resume**: PDF download link (CONTACT-02)
+- **Skill indicators**: Visual progress bars or tags (SKILL-01)
+- **Contact**: Contact section or form (CONTACT-01)
+- **Polish**: Continue refinements based on feedback
 
 ## Context
 
 - Built with Astro 5.x and Tailwind CSS v4
-- Currently has an amber-toned color scheme (amber-100/400) that needs replacement
-- Homepage uses a two-column layout (sidebar + experience); redesigning to single-column
-- The existing `src/components/Home.astro` has an HTML nesting bug (`<li>` inside `<li>`)
-- The footer credits Supabase which is not a dependency — needs cleaning up
-- Navigation has an About link that leads to a 404 page
-- The Projects page is a placeholder with just the text "Projects"
-- No tests, no linting, no type-checking CI step — these could be addressed but aren't blocking
+- Deployed to GitHub Pages via GitHub Actions
+- ~400 LOC across src/ (6 Astro components, 1 layout, 1 CSS file, 3 pages)
 - Site URL: https://ggolov.github.io
 - Repository: https://github.com/GGolov/ggolov.github.io
 
@@ -63,11 +90,11 @@ Visitors can quickly understand Gleb's professional background, skills, and expe
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Classic resume style | Professional CV impression, timeless layout | — Pending |
-| Single column layout | Clean top-to-bottom reading flow for recruiters | — Pending |
-| Dark/neutral color scheme | Modern professional look, high readability | — Pending |
-| Create About page (not remove link) | Natural home for bio/skills/education content | — Pending |
-| Remove Supabase from footer | Not used, misleading credit | — Pending |
+| Classic resume style | Professional CV impression, timeless layout | ✓ Implemented v1.0 |
+| Single column layout | Clean top-to-bottom reading flow for recruiters | ✓ Implemented v1.0 |
+| Dark/neutral color scheme | Modern professional look, high readability | ✓ Implemented v1.0 |
+| Create About page (not remove link) | Natural home for bio/skills/education content | ✓ Implemented v1.0 |
+| Remove Supabase from footer | Not used, misleading credit | ✓ Implemented v1.0 |
 
 ## Evolution
 
@@ -87,4 +114,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-05-19 after initialization*
+*Last updated: 2026-05-19 after v1.0 milestone*
